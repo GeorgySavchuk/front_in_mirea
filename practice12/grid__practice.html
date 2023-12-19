@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир кино</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="grid__styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="accumulator.js" defer></script>
+    <script src="cardsText.js" defer></script>
+</head>
+<body>
+    <div class="grid__container">
+        <div class="header">
+                <a href="grid__practice.html" class="logo">Мир Кино</a>
+                <div class="main__menu">
+                    <div class="shopping__basket">
+                        <svg style="enable-background:new 0 0 24 24;" version="1.1" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="info"/><g id="icons"><g id="cart2"><circle cx="10" cy="20" r="2"/><circle cx="16" cy="20" r="2"/><path d="M21.6,7.8C21.2,7.3,20.6,7,20,7H8.6L8,3.6C7.8,2.7,7,2,6,2H4C2.9,2,2,2.9,2,4s0.9,2,2,2h0.3L6,14.4c0.2,1,1,1.6,2,1.6h10    c0.9,0,1.6-0.6,1.9-1.4l2-5C22.1,9,22,8.4,21.6,7.8z"/></g></g></svg>
+                    </div>
+                    <div class="notification">
+                        <button type="button" class="icon-button">
+                            <span class="material-icons">notifications</span>
+                            <span class="icon-button__badge">3</span>
+                        </button>
+                        <div class="notification__items">
+                            <div class="notification__item">
+                                <span>1</span>
+                                <span>Фильм Побег из Шоушенка был добавлен в избранное</span>
+                            </div>
+                            <div class="notification__item">
+                                <span>2</span>
+                                <span>Фильм Гнев Человеческий был добавлен в избранное</span>
+                            </div>
+                            <div class="notification__item">
+                                <span>3</span>
+                                <span>Фильм Джентльмены был добавлен в избранное</span>
+                            </div>
+                        </div>
+                    </div>
+                    <nav>
+                        <ul>
+                            <div class="menu__in__header">
+                                <li><a href="grid__practice.html">Главная</a></li>
+                                <li><a href="#1">Фильмы</a></li>
+                                <li><a href="#2">Сериалы</a></li>
+                                <li><a href="grid__form.html">Поиск</a></li>
+                                <li><a href="login.html">Войти</a></li>
+                            </div>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="menu">
+                    <input type="checkbox" id="checkbox_toggle"/>
+                    <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+                    <div class="dropDownMenu">
+                        <ul>
+                            <li><a href="grid__practice.html">Главная</a></li>
+                            <li><a href="#1">Фильмы</a></li>
+                            <li><a href="#2">Сериалы</a></li>
+                            <li><a href="grid__form.html">Поиск</a></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <div class="sidebar">
+            <h2 style="text-align: center">Лучшие фильмы 2023 года</h2>
+            <ul>
+                <li>Оппенгеймер</li>
+                <li>Стражи Галактики. Часть 3</li>
+                <li>Джон Уик 4</li>
+                <li>Миссия невыполнима: Смертельная расплата. Часть первая</li>
+                <li>Air: Большой прыжок</li>
+            </ul>
+        </div>
+        <div class="main">
+            <h1 id="Header 1" style="text-align: center">Добро пожаловать на страницу о кино</h1>
+            <button class="task3BTN">Создать список</button>
+            <button class="task4BTN">Показать уведомление</button>
+            <section class="main__films">
+                <h2 id="Header 2">Основные фильмы</h2>
+                <ol type="I" start="1">
+                    <li><b>Интерстеллар</b></li>
+                    <li type="none">В ролях:</li>
+                    <ul type="square">
+                        <li>Мэттью МакКонахи</li>
+                        <li>Энн Хэтэуэй</li>
+                    </ul>
+                    <li value="3"><b>Бойцовский клуб</b></li>
+                    <li type="none">В ролях:</li>
+                    <ul type="square">
+                        <li>Эдвард Нортон</li>
+                        <li>Брэд Питт</li>
+                    </ul>
+                    <li value="3"><strong>Джентльмены</strong></li>
+                    <li type="none">В ролях:</li>
+                    <ul type="square">
+                        <li>Мэттью МакКонахи</li>
+                        <li>Чарли Ханнэм</li>
+                    </ul>
+                </ol>
+            </section>
+            <div class="terms">
+                <h2>Термины</h2>
+                <dl>
+                    <dt>Гафер</dt>
+                    <dd><u>Кино бригадир осветителей, отвечающий во время съёмок за осветительное оборудование</u></dd>
+                    <dt>Дрим-каст</dt>
+                    <dd><em>Список актёров, наиболее подходящих на роли в каком-либо фильме</em></dd>
+                    <dt><abbr title="Dots per inch">HDRip</abbr></dt>
+                    <dd>Видео имеющие разрешение HD - 720р и 1080р</dd>
+                    <dt>Ракурс</dt>
+                    <dd>Необычная перспектива, получаемая путем резкого наклона оси объектива </dd>
+                    <dd>Положение изображаемого предмета в перспективе, с резким уменьшением удалённых от переднего плана частей</dd>
+                    <dt>Бэкграунд</dt>
+                    <dd>Всё, относящееся к жизни, образованию, связям, опыту человека; интеллектуальный уровень, культурная подготовка, степень образованности, жизненный и профессиональный опыт </dd>
+                    <dd>Фоновое изображение или заливка</dd>
+                </dl>
+            </div>
+            <div class="quotes">
+                <h2 style="text-align: center">Известные цитаты о кино</h2>
+                <blockquote>
+                    <cite>Кинематограф — опасное изобретение. Его безумными лентами можно опоясать всю Землю, и стоит только поднести спичку…</cite>
+                    <br>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BB%D0%B5%D1%80,_%D0%A0%D0%B5%D0%BD%D0%B5">Рене Клер</a><sup>1</sup>
+                    <br>
+                    <cite>Во всем, на что направлен в наши дни киноаппарат, массы получат возможность взглянуть самим себе в лицо.</cite>
+                    <br>
+                    <a href="https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%BD%D1%8C%D1%8F%D0%BC%D0%B8%D0%BD,_%D0%92%D0%B0%D0%BB%D1%8C%D1%82%D0%B5%D1%80">Вальтер Беньямин</a><sub>2</sub>
+                </blockquote>
+                <br>
+            </div>
+            <div class="movie__cards">
+                <h3>Карточки с фильмами</h3>
+                <div class="movie__cards__container">
+                    <div class="movie__card">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/orig" alt="Побег из Шоушенка">
+                        <div class="movie__info">
+                            <h3>Побег из Шоушенка(1994)</h3>
+                            <p>Несправедливо осужденный банкир готовит побег из тюрьмы. Тим Роббинс в выдающейся экранизации Стивена Кинга</p>
+                            <a href="#111" class="movie__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="movie__card">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/orig" alt="Побег из Шоушенка">
+                        <div class="movie__info">
+                            <h3>Гнев человеческий(2021)</h3>
+                            <p>Хмурый мужчина прикидывается инкассатором, чтобы выйти на грабителей. Гай Ричи и Джейсон Стэйтем снова вместе</p>
+                            <a href="#112" class="movie__btn">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="movie__card">
+                        <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig" alt="Побег из Шоушенка">
+                        <div class="movie__info">
+                            <h3>Джентльмены(2019)</h3>
+                            <p>Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням</p>
+                            <a href="#113" class="movie__btn">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie__cards__container2">
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Побег из Шоушенка(1994)</h2>
+                            <p>Несправедливо осужденный банкир готовит побег из тюрьмы. Тим Роббинс в выдающейся экранизации Стивена Кинга</p>
+                            <a href="###">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Гнев человеческий(2021)</h2>
+                            <p>Хмурый мужчина прикидывается инкассатором, чтобы выйти на грабителей. Гай Ричи и Джейсон Стэйтем снова вместе</p>
+                            <a href="###">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <span></span>
+                        <div class="content">
+                            <h2>Джентльмены(2019)</h2>
+                            <p>Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням</p>
+                            <a href="###">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie__cards__container__with__blur">
+                    <div class="card1">
+                        <div class="card__info">
+                            <h2>Побег из Шоушенка(1994)</h2>
+                            <span>Несправедливо осужденный банкир готовит побег из тюрьмы. Тим Роббинс в выдающейся экранизации Стивена Кинга</span>
+                            <a href="###" class="card__info__btn1">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <div class="card__info">
+                            <h2>Гнев человеческий(2021)</h2>
+                            <span>Хмурый мужчина прикидывается инкассатором, чтобы выйти на грабителей. Гай Ричи и Джейсон Стэйтем снова вместе</span>
+                            <a href="###" class="card__info__btn2">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="card3">
+                        <div class="card__info">
+                            <h2>Джентльмены(2019)</h2>
+                            <span>Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням</span>
+                            <a href="###" class="card__info__btn3">Подробнее</a>
+                        </div>
+                    </div>
+                    <div id="blur"></div>
+                </div>
+                <div class="movie__cards__container">
+                    <div class="blur__box">
+                        <span class="blur__box__number">01</span>
+                        <div class="nonblur__box">
+                            <span class="button__line button__line&#45;&#45;top"></span>
+                            <span class="button__line button__line&#45;&#45;right"></span>
+                            <span class="button__line button__line&#45;&#45;bottom"></span>
+                            <span class="button__line button__line&#45;&#45;left"></span>
+                            <div class="nonblur__content">
+                                <h2>Побег из Шоушенка(1994)</h2>
+                                <span>Несправедливо осужденный банкир готовит побег из тюрьмы. Тим Роббинс в выдающейся экранизации Стивена Кинга</span>
+                                <a href="###">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blur__box">
+                        <span class="blur__box__number">02</span>
+                        <div class="nonblur__box">
+                            <span class="button__line button__line&#45;&#45;top"></span>
+                            <span class="button__line button__line&#45;&#45;right"></span>
+                            <span class="button__line button__line&#45;&#45;bottom"></span>
+                            <span class="button__line button__line&#45;&#45;left"></span>
+                            <div class="nonblur__content">
+                                <h2>Гнев человеческий(2021)</h2>
+                                <span>Хмурый мужчина прикидывается инкассатором, чтобы выйти на грабителей. Гай Ричи и Джейсон Стэйтем снова вместе</span>
+                                <a href="###">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blur__box">
+                        <span class="blur__box__number">03</span>
+                        <div class="nonblur__box">
+                            <span class="button__line button__line&#45;&#45;top"></span>
+                            <span class="button__line button__line&#45;&#45;right"></span>
+                            <span class="button__line button__line&#45;&#45;bottom"></span>
+                            <span class="button__line button__line&#45;&#45;left"></span>
+                            <div class="nonblur__content">
+                                <h2>Джентльмены(2019)</h2>
+                                <span>Наркобарон хочет уйти на покой, но криминальный мир не отпускает. Успешное возвращение Гая Ричи к корням</span>
+                                <a href="###">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <h3>Галлерея</h3>
+                <div class="grid__gallery">
+                    <div class="grid__gallery__container1">
+                        <img src="1.png">
+                        <span>Карточка 1</span>
+                    </div>
+                    <div class="grid__gallery__container2">
+                        <img src="2.png">
+                        <span>Карточка 2</span>
+                    </div>
+                    <div class="grid__gallery__container3">
+                        <img src="3.png">
+                        <span>Карточка 3</span>
+                    </div>
+                    <div class="grid__gallery__container4">
+                        <img src="4.png">
+                        <span>Карточка 4</span>
+                    </div>
+                    <div class="grid__gallery__container5">
+                        <img src="5.png">
+                        <span>Карточка 5</span>
+                    </div>
+                    <div class="grid__gallery__container6">
+                        <img src="6.png">
+                        <span>Карточка 6</span>
+                    </div>
+                    <div class="grid__gallery__container7">
+                        <img src="7.png">
+                        <span>Карточка 7</span>
+                    </div>
+                    <div class="grid__gallery__container8">
+                        <img src="9.png">
+                        <span>Карточка 8</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ads">Здесь могла быть ваша реклама</div>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="about__us">
+                    <h2>About us</h2>
+                    <p>Это сайт для просмотра кино</p>
+                    <div class="social__btns">
+                        <button class="social__btn1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.089 0 .525 4.175v16.694h5.736V24h3.132l3.127-3.132h4.695l6.26-6.258V0H2.089zm2.086 2.085H21.39v11.479l-3.652 3.652H12l-3.127 3.127v-3.127H4.175V2.085zm5.74 10.437H12v-6.26H9.915v6.26zm5.735 0h2.086v-6.26H15.65v6.26z" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg>
+                        </button>
+                        <button class="social__btn2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122" fill-rule="evenodd" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg></button>
+                        <button class="social__btn3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M501.303 132.765c-5.887-22.03-23.235-39.377-45.265-45.265C416.106 76.8 256 76.8 256 76.8s-160.107 0-200.039 10.7c-22.026 5.888-39.377 23.235-45.264 45.265C0 172.693 0 256.003 0 256.003s0 83.308 10.697 123.232c5.887 22.03 23.238 39.382 45.264 45.269C95.893 435.2 256 435.2 256 435.2s160.106 0 200.038-10.696c22.03-5.887 39.378-23.239 45.265-45.269 10.696-39.924 10.696-123.232 10.696-123.232s0-83.31-10.696-123.238ZM204.797 332.804V179.201l133.019 76.802-133.019 76.801Z" fill-rule="nonzero" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="quicklinks">
+                    <h2>Quick Links</h2>
+                    <ul>
+                        <li><a href="#1">About</a></li>
+                        <li><a href="#2">FAQ</a></li>
+                        <li><a href="#3">Privacy Policy</a></li>
+                        <li><a href="#4">Help</a></li>
+                        <li><a href="#5">Terms & Conditions</a></li>
+                        <li><a href="#6">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="quicklinks">
+                    <h2>Movie</h2>
+                    <ul>
+                        <li><a href="#11">Films</a></li>
+                        <li><a href="#21">Series</a></li>
+                        <li><a href="#31">Cartoons</a></li>
+                        <li><a href="#41">TV-shows</a></li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h2>Contact Us</h2>
+                    <ul class="info">
+                        <li>
+                            <span>13 Shokalsky passage Moscow, 117513, Russia</span>
+                        </li>
+                        <li>
+                            <p><a href="tel:+89629717195">+8 962 971-71 95</a></p>
+                        </li>
+                        <li>
+                            <p><a href="mailto:savchukg89@gmail.com">savchukg89@gmail.com</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyrightText">
+                <p>Copyright © 2023 Мир Кино.All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

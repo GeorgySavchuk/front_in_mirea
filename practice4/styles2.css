@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.menu__in__header {
+    display: flex;
+    font-size: 24px;
+}
+.menu__in__header li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-left: 1px solid black;
+}
+header .logo {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #141414;
+    font-size: 34px;
+}
+.menu {
+    position: fixed;
+    display: flex;
+    background: transparent;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.menu label {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+.menu__in__header li:first-child {
+    border-left: 0;
+}
+nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    transition: all .2s;
+    color: cornflowerblue;
+}
+nav ul li a:active {
+    color: lightpink;
+}
+nav ul li a:visited {
+    color: darkorchid;
+}
+nav > ul{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: bisque;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+body {
+    margin: 0;
+    width: 100%;
+    color: hsla(0,0%,100%,.6);
+    background: #141414;
+    font-family: circeRegular, sans-serif;
+}
+html {
+    overflow-x: hidden;
+}
+main {
+    padding-top: 100px;
+}
+form {
+    display:flex;
+    flex-direction: column;
+}
+#infoAboutFilm, #additionalOptions, #infoAboutUser, #movieLanguage{
+    display: flex;
+    flex-direction: column;
+}
+#infoAboutFilm {
+    margin-top: 85px;
+}
+
+#submit1, #submit2, #submit3{
+    width: 100px;
+}
+form label{
+    margin: 3px 0;
+    padding: 3px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-bottom-left-radius: 5px;
+}
+form *:focus {
+    transition: 0.1s;
+    margin-left: 3px;
+}
+fieldset{
+    margin: 20px;
+    padding: 15px;
+    /*background: honeydew;*/
+    background: rgba(255, 255, 255, 0.07);
+}
+form *::placeholder{
+    font-style: italic;
+    letter-spacing: 0.08em;
+    color: cornflowerblue;
+}
+input{
+    border-radius: 5px;
+    border-color: slategray;
+    background: cornsilk;
+    height: 20px;
+}
+select, textarea{
+    border-radius: 5px;
+    border-color: slategray;
+    background: cornsilk;
+    height: 36px;
+}
+.buttons{
+    display: flex;
+    margin-left: 50px;
+    gap: 20px;
+    align-items: end;
+    padding-bottom: 30px;
+}
+/*.buttons button {
+    background: cornsilk;
+    color: rgb(40, 40, 40);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    height: 30px;
+}*/
+#frames{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+iframe{
+    width:800px;
+    height: 500px;
+}

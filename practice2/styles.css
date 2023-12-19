@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.menu__in__header {
+    display: flex;
+    font-size: 24px;
+}
+.menu__in__header li{
+    list-style: none;
+    margin-right: 10px;
+    padding: 5px 15px;
+    border-left: 1px solid black;
+}
+.menu {
+    display: flex;
+    background: transparent;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+}
+.menu label {
+    width: 24px;
+    height: 5px;
+    right: 10px;
+    top: 15px;
+}
+.menu__in__header li:first-child {
+    border-left: 0;
+}
+nav ul li a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    transition: all .2s;
+    color: cornflowerblue;
+}
+nav ul li a:active {
+    color: lightpink;
+}
+nav ul li a:visited {
+    color: darkorchid;
+}
+nav > ul{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: bisque;
+    margin: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    top: 0;
+    z-index: 10000;
+}
+aside li {
+    list-style: circle;
+}
+body{
+    margin: 0;
+    font-family: "Roboto";
+    background: #141414;
+    color: hsla(0,0%,100%,.6);
+}
+.logo img{
+    background: bisque;
+}
+aside {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    top: 100px;
+    right: 0;
+    width: 350px;
+    height: 200px;
+    padding-left: 5px;
+    transition: height 0.3s ease;
+    z-index: 10;
+    color: hsla(0,0%,100%,.6);
+    background: #333333;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.main__films {
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+h1, h2, h3, h4{
+    font-family: 'Montserrat';
+}
+h2 + ol {
+    margin-top: 10px;
+}
+.terms {
+    left: 50px;
+    top: 10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.terms dl dd {
+    margin-top: 15px;
+}
+.quotes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.quotes cite {
+    text-align: center;
+    overflow-wrap: break-word;
+}
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.image__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+}
+.absoluteBlock{
+    top: 280px;
+    left: 500px;
+    border: 1px solid black;
+    padding: 5px;
+}
+.links__to__headers {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+;
+}
+html{
+    overflow-x: hidden;
+}
+main {
+    top: 50px;
+}
+footer {
+    top: 40px;
+}
+.main__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}

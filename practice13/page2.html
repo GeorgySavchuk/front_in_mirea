@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="grid__practice.html" class="logo">Мир Кино</a>
+    <div class="main__menu">
+        <div class="notification">
+            <button type="button" class="icon-button">
+                <span class="material-icons">notifications</span>
+                <span class="icon-button__badge">3</span>
+            </button>
+            <div class="notification__items">
+                <div class="notification__item">
+                    <span>1</span>
+                    <span>Фильм Побег из Шоушенка был добавлен в избранное</span>
+                </div>
+                <div class="notification__item">
+                    <span>2</span>
+                    <span>Фильм Гнев Человеческий был добавлен в избранное</span>
+                </div>
+                <div class="notification__item">
+                    <span>3</span>
+                    <span>Фильм Джентльмены был добавлен в избранное</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <div class="menu__in__header">
+                    <li><a href="grid__practice.html">Главная</a></li>
+                    <li><a href="#1">Фильмы</a></li>
+                    <li><a href="#2">Сериалы</a></li>
+                    <li><a href="page2.html">Поиск</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+        <div class="dropDownMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#1">Фильмы</a></li>
+                <li><a href="#2">Сериалы</a></li>
+                <li><a href="page2.html">Поиск</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post">
+        <fieldset id = "infoAboutFilm">
+            <legend>Введите всю информацию о фильме</legend>
+            <label for="filmTitle">
+                Название фильма:
+                <input type="text" id="filmTitle" name="filmTitle" required placeholder="Введите название фильма">
+            </label>
+            <label for="director">
+                Режиссер:
+                <input type="text" id="director" name="director" placeholder="Введите имя режиссера">
+            </label>
+            <label for="releaseDate">
+                Дата выпуска:
+                <input type="datetime-local" id="releaseDate" name="releaseDate" required>
+            </label>
+            <label for="genre">
+                Жанр:
+                <select id="genre" name="genre" required>
+                    <option value="action">Боевик</option>
+                    <option value="comedy">Комедия</option>
+                    <option value="drama">Драма</option>
+                    <option value="horror">Ужасы</option>
+                </select>
+            </label>
+            <label for="plot">
+                Описание сюжета:
+                <textarea id="plot" name="plot" rows="5" cols="40" maxlength="500" minlength="10" placeholder="Введите описание сюжета" required></textarea>
+            </label>
+            <label for="poster">
+                Постер фильма:
+                <input type="file" id="poster" name="poster" accept="image/*">
+            </label>
+<!--            <input type = "submit" name = "submit" id = "submit1" value="Сохранить">-->
+            <button type="submit" class="btn1">Сохранить</button>
+        </fieldset>
+        <fieldset id="additionalOptions">
+            <legend>Дополнительные опции</legend>
+
+            <label for="languageSelect">
+                Язык озвучки:
+                <select id="languageSelect" name="languageSelect" multiple required size="3">
+                    <option value="english">Английский</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="french">Французский</option>
+                    <option value="german">Немецкий</option>
+                </select>
+            </label>
+
+            <label for="subtitle">
+                Наличие субтитров:
+                <input type="checkbox" id="subtitle" name="subtitle" checked>
+            </label>
+
+            <label for="trailer">
+                Трейлер:
+                <input type="url" id="trailer" name="trailer" placeholder="Введите URL трейлера">
+            </label>
+            <label>
+                Возрастной рейтинг:
+                <input type="radio"  name="ageRating" value="PG">PG
+                <input type="radio" name="ageRating" value="PG-13">PG-13
+                <input type="radio"  name="ageRating" value="R">R
+            </label>
+            <button type="submit" class="btn2">Сохранить</button>
+<!--            <input type = "submit" name = "submit" id = "submit2" value="Сохранить">-->
+        </fieldset>
+        <fieldset id="infoAboutUser">
+            <legend>Введите информацию о себе</legend>
+            <label>
+                Адрес
+                <input type = "text" name = "text" id = "text" placeholder="Ваш адрес" required>
+            </label>
+            <label>
+                Телефон
+                <input type = "tel" name = "tel" id = "tel" pattern="^\+[0-9]{10,11}$" placeholder="Ваш номер телефона" required>
+            </label>
+            <label>
+                E-mail
+                <input type = "email" name = "email" id = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваша почта" required>
+            </label>
+            <label>
+                Пароль
+                <input type = "password" name = "password" id = "password" placeholder="Пароль" required>
+            </label>
+            <button type="submit" class="btn3">Сохранить</button>
+<!--            <input type = "submit" name = "submit" id = "submit3" value="Сохранить">-->
+        </fieldset>
+        <div class="buttons">
+<!--            <button type="reset">Сбросить данные</button>-->
+<!--            <button type="submit">Отправить</button>-->
+            <button type="reset" class="btn5">
+                Сбросить данные
+            </button>
+            <button type="submit" class="btn4">
+                <span class="button__line button__line--top"></span>
+                <span class="button__line button__line--right"></span>
+                <span class="button__line button__line--bottom"></span>
+                <span class="button__line button__line--left"></span>
+                Отправить
+            </button>
+        </div>
+    </form>
+    <div id="frames">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2250.2093760800612!2d37.479107312729354!3d55.667959148410176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L_RgC4g0JLQtdGA0L3QsNC00YHQutC-0LPQviwgNzgsINCc0L7RgdC60LLQsCwgMTE5NDU0!5e0!3m2!1sru!2sru!4v1696191467515!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Гугл карта)"></iframe>
+        </div>
+<!--        <div class="trailer">-->
+<!--            <iframe width="560" height="315" src="https://www.youtube.com/embed/PFepj-rWbFE" title="Оппенгеймер — Официальный русский трейлер #2 (Дубляж, 2023)" frameborder="0" allowfullscreen></iframe>-->
+<!--        </div>-->
+        <div class="video-container">
+            <div class="video-wrapper">
+                <div class="video-info">
+                    <h3>Оппенгеймер</h3>
+                    <p>Описание фильма</p>
+                    <p>История жизни американского физика Роберта Оппенгеймера, который стоял во главе первых разработок ядерного оружия.</p>
+<!--                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto optio dignissimos alias id eveniet? Consectetur eveniet rem repellat tempore ipsa.</p>-->
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PFepj-rWbFE" title="Оппенгеймер — Официальный русский трейлер #2 (Дубляж, 2023)" frameborder="0" allowfullscreen></iframe>
+<!--                <iframe src="https://www.youtube.com/embed/YQc4WT0yDH4?si=3AM8Wn68EXzpcAa5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Анкета</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="grid__practice.html" class="logo">Мир Кино</a>
+    <div class="main__menu">
+        <nav>
+            <ul>
+                <div class="menu__in__header">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#1">Фильмы</a></li>
+                    <li><a href="#2">Сериалы</a></li>
+                    <li><a href="page2.html">Поиск</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+        <div class="dropDownMenu">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="#1">Фильмы</a></li>
+                <li><a href="#2">Сериалы</a></li>
+                <li><a href="page2.html">Поиск</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <form method="post">
+        <fieldset id = "infoAboutFilm">
+            <legend>Введите всю информацию о фильме</legend>
+            <label for="filmTitle">
+                Название фильма:
+                <input type="text" id="filmTitle" name="filmTitle" required placeholder="Введите название фильма">
+            </label>
+            <label for="director">
+                Режиссер:
+                <input type="text" id="director" name="director" placeholder="Введите имя режиссера">
+            </label>
+            <label for="releaseDate">
+                Дата выпуска:
+                <input type="datetime-local" id="releaseDate" name="releaseDate" required>
+            </label>
+            <label for="genre">
+                Жанр:
+                <select id="genre" name="genre" required>
+                    <option value="action">Боевик</option>
+                    <option value="comedy">Комедия</option>
+                    <option value="drama">Драма</option>
+                    <option value="horror">Ужасы</option>
+                </select>
+            </label>
+            <label for="plot">
+                Описание сюжета:
+                <textarea id="plot" name="plot" rows="5" cols="40" maxlength="500" minlength="10" placeholder="Введите описание сюжета" required></textarea>
+            </label>
+            <label for="poster">
+                Постер фильма:
+                <input type="file" id="poster" name="poster" accept="image/*">
+            </label>
+            <input type = "submit" name = "submit" id = "submit1" value="Сохранить">
+        </fieldset>
+        <fieldset id="additionalOptions">
+            <legend>Дополнительные опции</legend>
+
+            <label for="languageSelect">
+                Язык озвучки:
+                <select id="languageSelect" name="languageSelect" multiple required size="3">
+                    <option value="english">Английский</option>
+                    <option value="spanish">Испанский</option>
+                    <option value="french">Французский</option>
+                    <option value="german">Немецкий</option>
+                </select>
+            </label>
+
+            <label for="subtitle">
+                Наличие субтитров:
+                <input type="checkbox" id="subtitle" name="subtitle" checked>
+            </label>
+
+            <label for="trailer">
+                Трейлер:
+                <input type="url" id="trailer" name="trailer" placeholder="Введите URL трейлера">
+            </label>
+            <label>
+                Возрастной рейтинг:
+                <input type="radio"  name="ageRating" value="PG">PG
+                <input type="radio" name="ageRating" value="PG-13">PG-13
+                <input type="radio"  name="ageRating" value="R">R
+            </label>
+            <input type = "submit" name = "submit" id = "submit2" value="Сохранить">
+        </fieldset>
+        <fieldset id="infoAboutUser">
+            <legend>Введите информацию о себе</legend>
+            <label>
+                Адрес
+                <input type = "text" name = "text" id = "text" placeholder="Ваш адрес" required>
+            </label>
+            <label>
+                Телефон
+                <input type = "tel" name = "tel" id = "tel" pattern="^\+[0-9]{10,11}$" placeholder="Ваш номер телефона" required>
+            </label>
+            <label>
+                E-mail
+                <input type = "email" name = "email" id = "email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Ваша почта" required>
+            </label>
+            <label>
+                Пароль
+                <input type = "password" name = "password" id = "password" placeholder="Пароль" required>
+            </label>
+            <input type = "submit" name = "submit" id = "submit3" value="Сохранить">
+        </fieldset>
+        <div class="buttons">
+            <button type="reset">Сбросить данные</button>
+            <button type="submit">Отправить</button>
+        </div>
+    </form>
+    <div id="frames">
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2250.2093760800612!2d37.479107312729354!3d55.667959148410176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L_RgC4g0JLQtdGA0L3QsNC00YHQutC-0LPQviwgNzgsINCc0L7RgdC60LLQsCwgMTE5NDU0!5e0!3m2!1sru!2sru!4v1696191467515!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Гугл карта)"></iframe>
+        </div>
+    </div>
+</main>
+</body>
+</html>

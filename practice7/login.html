@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир Кино</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles3.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<header>
+    <a href="grid__practice.html" class="logo">Мир Кино</a>
+    <div class="main__menu">
+        <div class="notification">
+            <button type="button" class="icon-button">
+                <span class="material-icons">notifications</span>
+                <span class="icon-button__badge">3</span>
+            </button>
+            <div class="notification__items">
+                <div class="notification__item">
+                    <span>1</span>
+                    <span>Фильм Побег из Шоушенка был добавлен в избранное</span>
+                </div>
+                <div class="notification__item">
+                    <span>2</span>
+                    <span>Фильм Гнев Человеческий был добавлен в избранное</span>
+                </div>
+                <div class="notification__item">
+                    <span>3</span>
+                    <span>Фильм Джентльмены был добавлен в избранное</span>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <div class="menu__in__header">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#1">Фильмы</a></li>
+                    <li><a href="#2">Сериалы</a></li>
+                    <li><a href="page2.html">Поиск</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+        <div class="dropDownMenu">
+            <ul>
+                <li><a href="grid__practice.html.html">Главная</a></li>
+                <li><a href="#1">Фильмы</a></li>
+                <li><a href="#2">Сериалы</a></li>
+                <li><a href="grid__form.html">Поиск</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="box">
+        <div class="square" style="--i:0;"></div>
+        <div class="square" style="--i:1;"></div>
+        <div class="square" style="--i:2;"></div>
+        <div class="square" style="--i:3;"></div>
+        <div class="square" style="--i:4;"></div>
+        <div class="container">
+            <div class="form">
+                <h2>Логин</h2>
+                <form action="">
+                    <div class="input__box">
+                        <input type="text" placeholder="Почта">
+                    </div>
+                    <div class="input__box">
+                        <input type="text" placeholder="Пароль">
+                    </div>
+                    <div class="input__box">
+                        <input type="submit" value="Войти">
+                    </div>
+                    <p class="forget">Забыли пароль? <a href="####">Перейти</a></p>
+                    <p class="forget">Ещё нет аккаунта? <a href="####">Зарегистрироваться</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

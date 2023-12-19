@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="task1.css">
+    <title>Мир кино</title>
+    <script src="task1.js" defer></script>
+</head>
+<body>
+<div class="header">
+    <a href="grid__practice.html" class="logo">Мир Кино</a>
+    <div class="main__menu">
+        <nav>
+            <ul>
+                <div class="menu__in__header">
+                    <li><a href="grid__practice.html">Главная</a></li>
+                    <li><a href="task1.html">Задача 1</a></li>
+                    <li><a href="task3.html">Задача 3</a></li>
+                    <li><a href="task4.html">Задача 4</a></li>
+                    <li><a href="grid__form.html">Поиск</a></li>
+                    <li><a href="login.html">Войти</a></li>
+                </div>
+            </ul>
+        </nav>
+    </div>
+    <div class="menu">
+        <input type="checkbox" id="checkbox_toggle"/>
+        <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+        <div class="dropDownMenu">
+            <ul>
+                <li><a href="grid__practice.html">Главная</a></li>
+                <li><a href="task1.html">Задача1</a></li>
+                <li><a href="task3.html">Задача 3</a></li>
+                <li><a href="task4.html">Задача 4</a></li>
+                <li><a href="grid__form.html">Поиск</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="main">
+    <div id="contents">
+        <a href="https://react.dev/"><span>Дока React</span></a>
+        <a href="https://nextjs.org/docs"><span>Дока Next.js</span></a>
+        <a href="login.html"><i>Страница логина</i></a>
+    </div>
+    <div class="gallery">
+        <div class="main-image">
+            <img src="" loading="eager">
+        </div>
+        <div class="clickable-images">
+            <div class="image-layout">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/orig" id="0">
+            </div>
+            <div class="image-layout">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/fb35416f-3b0d-4b96-bc65-cf6923f9e329/orig" id="1">
+            </div>
+            <div class="image-layout">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig" id="2">
+            </div>
+            <div class="image-layout">
+                <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/dd78edfd-6a1f-486c-9a86-6acbca940418/orig" id="3">
+            </div>
+        </div>
+    </div>
+    <ul id="myList">
+        <li>Папка 1</li>
+        <li>Папка 2</li>
+        <li>Папка 3</li>
+        <li>Папка 4</li>
+        <li>Папка 5</li>
+    </ul>
+    <div class="slider">
+        <div class="thumb"></div>
+    </div>
+    <div class="cart-container">
+        <h2>Список товаров</h2>
+        <div class="products">
+            <div class="cart-item">
+                <div class="title-and-image">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/0b76b2a2-d1c7-4f04-a284-80ff7bb709a4/orig">
+                    <p class="title">Побег из Шоушенка(1994)</p>
+                </div>
+                <div>
+                    <p class="total-cost">500</p>
+                    <h4>Количество</h4>
+                    <div class="count-container">
+                        <button class="minus">-</button>
+                        <p class="count">1</p>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="title-and-image">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/6201401/90d57813-387c-44c4-81c1-ecddb3c417a5/orig">
+                    <p class="title">Гнев человеческий(2021)</p>
+                </div>
+                <div>
+                    <p class="total-cost">550</p>
+                    <h4>Количество</h4>
+                    <div class="count-container">
+                        <button class="minus">-</button>
+                        <p class="count">1</p>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="title-and-image">
+                    <img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/637271d5-61b4-4e46-ac83-6d07494c7645/orig">
+                    <p class="title">Джентльмены(2019)</p>
+                </div>
+                <div>
+                    <p class="total-cost">600</p>
+                    <h4>Количество</h4>
+                    <div class="count-container">
+                        <button class="minus">-</button>
+                        <p class="count">1</p>
+                        <button class="plus">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-submit-container">
+            <h2>Корзина</h2>
+            <h3 class="total">Итого: 0 руб</h3>
+            <button class="btn-order">Перейти к оформлению</button>
+            <button class="clear-cart">Очистить корзину</button>
+        </div>
+    </div>
+    <div id="animatedList">
+        <span>Дока React</span>
+        <span>Дока Next.js</span>
+        <span>Страница логина</span>
+    </div>
+    <section class="make-list">
+        <div style="display:flex; justify-content: space-between; flex-direction: column">
+            <h2>Создание списка</h2>
+            <button class="btn-add-li">Добавить пункт</button>
+        </div>
+        <ul class="target-list">
+        </ul>
+    </section>
+</div>
+</body>
+</html>

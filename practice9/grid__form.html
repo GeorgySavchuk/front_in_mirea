@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Мир Кино</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="grid__form__styles.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="index.js" defer></script>
+    <script src="grid__form.js" defer></script>
+</head>
+<body>
+<div class="grid__container">
+    <div class="header">
+        <a href="grid__practice.html" class="logo">Мир Кино</a>
+        <div class="main__menu">
+            <div class="like__btn__container">
+                <button class="like__btn">
+                    <svg height="512px" id="Layer_1" class="like__img" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M340.8,83C307,83,276,98.8,256,124.8c-20-26-51-41.8-84.8-41.8C112.1,83,64,131.3,64,190.7c0,27.9,10.6,54.4,29.9,74.6  L245.1,418l10.9,11l10.9-11l148.3-149.8c21-20.3,32.8-47.9,32.8-77.5C448,131.3,399.9,83,340.8,83L340.8,83z" fill="black"/>
+                    </svg>
+
+                    <!--                    <svg class="like__img" enable-background="new 0 0 48 48" height="20px" version="1.1" viewBox="0 0 48 48" width="20px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Expanded"><g><path d="M24,47.001c-0.173,0-0.346-0.045-0.501-0.135c-0.239-0.138-5.913-3.447-11.678-8.778C3.977,30.835,0,23.668,0,16.787    c0-9.275,6.279-13.5,12.113-13.5c4.499,0,9.53,2.572,11.887,8.229c2.357-5.657,7.389-8.229,11.887-8.229    C41.721,3.287,48,7.512,48,16.787c0,6.881-3.977,14.048-11.821,21.301c-5.765,5.331-11.439,8.641-11.678,8.778    C24.346,46.956,24.173,47.001,24,47.001z M12.113,5.287C7.242,5.287,2,8.886,2,16.787C2,30.65,20.674,42.783,24,44.833    c3.323-2.051,22-14.193,22-28.046c0-7.901-5.242-11.5-10.113-11.5c-4.473,0-9.58,3.062-10.905,9.903C24.891,15.66,24.479,16,24,16    s-0.891-0.34-0.982-0.81C21.693,8.35,16.586,5.287,12.113,5.287z"/></g></g></svg>-->
+                    <span class="like__counter">0</span>
+                </button>
+            </div>
+            <div class="notification">
+                <button type="button" class="icon-button">
+                    <span class="material-icons">notifications</span>
+                    <span class="icon-button__badge">3</span>
+                </button>
+                <div class="notification__items">
+                    <div class="notification__item">
+                        <span>1</span>
+                        <span>Фильм Побег из Шоушенка был добавлен в избранное</span>
+                    </div>
+                    <div class="notification__item">
+                        <span>2</span>
+                        <span>Фильм Гнев Человеческий был добавлен в избранное</span>
+                    </div>
+                    <div class="notification__item">
+                        <span>3</span>
+                        <span>Фильм Джентльмены был добавлен в избранное</span>
+                    </div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <div class="menu__in__header">
+                        <li><a href="grid__practice.html">Главная</a></li>
+                        <li><a href="#1">Фильмы</a></li>
+                        <li><a href="#2">Сериалы</a></li>
+                        <li><a href="grid__form.html">Поиск</a></li>
+                        <li><a href="login.html">Войти</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu">
+            <input type="checkbox" id="checkbox_toggle"/>
+            <label for="checkbox_toggle" class="hamburger"><span class="hamburger-line"></span></label>
+            <div class="dropDownMenu">
+                <ul>
+                    <li><a href="grid__practice.html">Главная</a></li>
+                    <li><a href="#1">Фильмы</a></li>
+                    <li><a href="#2">Сериалы</a></li>
+                    <li><a href="grid__form.html">Поиск</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="grid__form__container">
+            <h2>Contact</h2>
+            <form>
+                <div class="grid__wrapper1">
+                    <div class="box1">
+                        <input type="text" name="fname" id="fname" required>
+                        <label for="fname">Имя</label>
+                    </div>
+                    <div class="box2">
+                        <input type="text" name="lname" id="lname" required>
+                        <label for="lname">Фамилия</label>
+                    </div>
+                </div>
+                <div class="grid__wrapper2">
+                    <div class="box1">
+                        <input type="email" name="mail" id="mail" required>
+                        <label for="mail">Почта</label>
+                    </div>
+                    <div class="box2">
+                        <input type="text" name="tel" id="tel" required>
+                        <label for="tel">Телефон</label>
+                    </div>
+                </div>
+                <div class="grid__wrapper__textarea">
+                    <div class="box">
+                        <textarea id="mes" required></textarea>
+                        <label for="mes">Напишите Ваше сообщение здесь</label>
+                    </div>
+                </div>
+                <input type="submit" name="" value="Отправить">
+            </form>
+            <div class="hearts__container">
+                <button class="">Нравится</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__container">
+            <div class="about__us">
+                <h2>About us</h2>
+                <p>Это сайт для просмотра кино</p>
+                <div class="social__btns">
+                    <button class="social__btn1">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M2.089 0 .525 4.175v16.694h5.736V24h3.132l3.127-3.132h4.695l6.26-6.258V0H2.089zm2.086 2.085H21.39v11.479l-3.652 3.652H12l-3.127 3.127v-3.127H4.175V2.085zm5.74 10.437H12v-6.26H9.915v6.26zm5.735 0h2.086v-6.26H15.65v6.26z" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg>
+                    </button>
+                    <button class="social__btn2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M484.7 132c3.56-11.28 0-19.48-15.75-19.48h-52.37c-13.21 0-19.31 7.18-22.87 14.86 0 0-26.94 65.6-64.56 108.13-12.2 12.3-17.79 16.4-24.4 16.4-3.56 0-8.14-4.1-8.14-15.37V131.47c0-13.32-4.06-19.47-15.25-19.47H199c-8.14 0-13.22 6.15-13.22 12.3 0 12.81 18.81 15.89 20.84 51.76V254c0 16.91-3 20-9.66 20-17.79 0-61-66.11-86.92-141.44C105 117.64 99.88 112 86.66 112H33.79C18.54 112 16 119.17 16 126.86c0 13.84 17.79 83.53 82.86 175.77 43.21 63 104.72 96.86 160.13 96.86 33.56 0 37.62-7.69 37.62-20.5v-47.66c0-15.37 3.05-17.93 13.73-17.93 7.62 0 21.35 4.09 52.36 34.33C398.28 383.6 404.38 400 424.21 400h52.36c15.25 0 22.37-7.69 18.3-22.55-4.57-14.86-21.86-36.38-44.23-62-12.2-14.34-30.5-30.23-36.09-37.92-7.62-10.25-5.59-14.35 0-23.57-.51 0 63.55-91.22 70.15-122" fill-rule="evenodd" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg></button>
+                    <button class="social__btn3">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" xml:space="preserve" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M501.303 132.765c-5.887-22.03-23.235-39.377-45.265-45.265C416.106 76.8 256 76.8 256 76.8s-160.107 0-200.039 10.7c-22.026 5.888-39.377 23.235-45.264 45.265C0 172.693 0 256.003 0 256.003s0 83.308 10.697 123.232c5.887 22.03 23.238 39.382 45.264 45.269C95.893 435.2 256 435.2 256 435.2s160.106 0 200.038-10.696c22.03-5.887 39.378-23.239 45.265-45.269 10.696-39.924 10.696-123.232 10.696-123.232s0-83.31-10.696-123.238ZM204.797 332.804V179.201l133.019 76.802-133.019 76.801Z" fill-rule="nonzero" fill="hsla(0,0%,100%,.9)" class="fill-000000"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#1">About</a></li>
+                    <li><a href="#2">FAQ</a></li>
+                    <li><a href="#3">Privacy Policy</a></li>
+                    <li><a href="#4">Help</a></li>
+                    <li><a href="#5">Terms & Conditions</a></li>
+                    <li><a href="#6">Contact</a></li>
+                </ul>
+            </div>
+            <div class="quicklinks">
+                <h2>Movie</h2>
+                <ul>
+                    <li><a href="#11">Films</a></li>
+                    <li><a href="#21">Series</a></li>
+                    <li><a href="#31">Cartoons</a></li>
+                    <li><a href="#41">TV-shows</a></li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h2>Contact Us</h2>
+                <ul class="info">
+                    <li>
+                        <span>13 Shokalsky passage Moscow, 117513, Russia</span>
+                    </li>
+                    <li>
+                        <p><a href="tel:+89629717195">+8 962 971-71 95</a></p>
+                    </li>
+                    <li>
+                        <p><a href="mailto:savchukg89@gmail.com">savchukg89@gmail.com</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyrightText">
+            <p>Copyright © 2023 Мир Кино.All Rights Reserved</p>
+        </div>
+    </div>
+</div>
+<script>
+    window.onload = function (){
+        let agreed = false;
+        while(!agreed){
+            agreed = prompt("Желаете пройти регистрацию?") === "Да";
+            if(!agreed){
+                alert("Попробуйте ещё раз")
+            }
+        };
+        alert("Круто!")
+        let login = prompt("Введите логин");
+        if(login === "Админ"){
+            login = prompt("Ведите пароль")
+            if(login === "Я главный"){
+                alert("Здравствуйте!")
+            }else if (login === null || login === ""){
+                alert("Отменено");
+            }else{
+                alert("Неверный пароль");
+            }
+        }else if (login === null || login === ""){
+            alert("Отменено");
+        }else{
+            alert("Я вас не знаю");
+        }
+    };
+</script>
+</body>
+</html>
